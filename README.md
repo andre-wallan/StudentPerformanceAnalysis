@@ -1,64 +1,100 @@
 # Student Performance Analysis
 
-A Python command-line project for exploring student mathematics grades,
-study time, and absences. It reads the included CSV dataset, prints summary
-statistics, and generates charts for grade distribution, study-time
-performance, absences, and grade progression.
+## Overview
 
-## Requirements
+This project was created to explore and learn **Python** by building a practical data analysis application. The software is a **Student Performance Analysis** tool that allows users to:
 
-- Python 3
-- Packages listed in `requirements.txt`
+- Load and explore student mathematics records from a CSV dataset
+- Calculate the average, highest, and lowest final grades
+- Identify the number of students who passed or failed
+- Compare students' study time with their academic performance
+- Examine the relationship between student absences and final grades
+- Generate charts to display student performance and grade progression
 
-## Setup
+The purpose of this project was to practice **Python programming, data handling, data analysis, and data visualization** while working with a real-world educational dataset.
 
-From the project root in PowerShell:
+The project helped me understand how to use Python libraries to load, organize, analyze, and present data. I also learned how to create visual charts that make it easier to understand student performance and identify patterns in the data.
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-```
+## Software Demo Video
 
-## Run
+[Software Demo Video](INSERT_YOUR_YOUTUBE_LINK_HERE)
 
-Run the analysis and charts separately:
 
-```powershell
-python .\src\analysis.py
-python .\src\visualization.py
-```
 
-The dataset is expected at `data\student-mat.csv`. The loader checks for this
-file and for the columns needed by the analysis.
+## Development Environment
 
-The analysis reports the number of students, average/highest/lowest final
-grades, pass and fail counts (using 10/20 as the pass mark), mean final grades
-by study-time category, the absences/grade correlation, and averages for
-grades G1, G2, and G3.
+- **Visual Studio Code** – code editor used for development
+- **Python 3** – programming language used to build the project
+- **Pandas** – used for loading and analyzing the student dataset
+- **NumPy** – used for numerical operations
+- **Matplotlib** – used for creating data visualizations
+- **CSV Dataset** – contains student mathematics records
 
-The visualization script saves four PNG files in `charts\`:
+The project uses Python libraries to perform data analysis and generate charts.
 
-- `grade_distribution.png` — distribution of final grades (G3)
-- `study_time_performance.png` — average G3 by study-time category
-- `absences_performance.png` — absences compared with G3
-- `grade_progression.png` — average grades across G1, G2, and G3
+---
 
-The charts are also displayed while the visualization script is running.
+## Features
 
-## Project layout
+- **Data Loading** – Reads student mathematics records from the CSV dataset.
+- **Summary Statistics** – Calculates the number of students and their average, highest, and lowest final grades.
+- **Pass and Fail Analysis** – Counts students who passed or failed using 10/20 as the pass mark.
+- **Study Time Analysis** – Compares average final grades across different study-time categories.
+- **Absence Analysis** – Examines the relationship between student absences and final grades.
+- **Grade Progression** – Compares average grades across G1, G2, and G3.
+- **Data Visualization** – Generates four charts to make the results easier to understand.
 
-```text
-data/       Student mathematics records
-src/        Data loading, analysis, and visualization scripts
-charts/     Generated chart images
-```
+---
 
-## Assignment submission reminders
+## Useful Websites
 
-This README documents the software but does not replace any institution-
-provided README template. If the assignment requires a specific template,
-transfer this project information into that template. Video recording and
-posting, public GitHub publication, the time log, the learning-strategies
-discussion, and the Microsoft Teams video link must be completed and
-submitted separately.
+- [Python Official Documentation](https://docs.python.org/3/) – Reference for Python programming.
+- [Pandas Documentation](https://pandas.pydata.org/docs/) – Learning how to load and analyze datasets.
+- [NumPy Documentation](https://numpy.org/doc/) – Reference for numerical operations.
+- [Matplotlib Documentation](https://matplotlib.org/stable/) – Learning how to create charts and graphs.
+- [Stack Overflow](https://stackoverflow.com/) – Finding solutions to programming problems and errors.
+
+---
+
+## Future Work
+
+Future improvements for the Student Performance Analysis project include:
+
+- Add more student performance indicators for deeper analysis.
+- Allow users to load different student datasets.
+- Include more charts to explore other factors affecting academic performance.
+- Add filters to analyze students based on different categories.
+- Develop a simple web interface to make the application easier to use.
+- Improve the analysis by adding more statistical methods.
+
+---
+
+## How to Run
+
+1. Clone the GitHub repository.
+2. Open the project folder in Visual Studio Code or PowerShell.
+3. Create a Python virtual environment:
+
+   `py -m venv .venv`
+
+4. Activate the virtual environment:
+
+   `.\.venv\Scripts\Activate.ps1`
+
+5. Install the required packages:
+
+   `python -m pip install -r requirements.txt`
+
+6. Make sure the dataset is available in the `data` folder as `student-mat.csv`.
+
+7. Run the data analysis:
+
+   `python .\src\analysis.py`
+
+8. Generate and display the charts:
+
+   `python .\src\visualization.py`
+
+The charts will be saved in the `charts` folder.
+
+---
